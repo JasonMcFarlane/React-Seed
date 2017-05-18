@@ -1,13 +1,13 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');  
 const injectConfig = new HtmlWebpackPlugin({  
-  template: './index.html',
+  template: '../build/index.html',
   filename: 'index.html',
   inject: 'body'
 });
 
 module.exports = {
     context: __dirname + '/app',
-    entry: './index.js',
+    entry: './app.js',
     output: {
         path: __dirname + '/build',
         filename: 'bundle.js'
